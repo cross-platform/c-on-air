@@ -1,0 +1,44 @@
+html
+{
+  height: 100%;
+}
+
+body
+{
+  overflow: hidden;
+  background-color: rgb(57,100,225);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 48%;
+  left: 50%;
+  width: 20em;
+  height: 20em;
+  margin-top: -10em; /*set to a negative number 1/2 of your height*/
+  margin-left: -10em; /*set to a negative number 1/2 of your width*/
+}
+
+.editbox
+{
+  position: absolute;
+  font-family: "Arial Rounded MT Bold";
+  font-size: 180%;
+  padding-top: 0px;
+  padding-left: 3%;
+  border-style: none;
+  background-color: transparent;
+  outline: none;
+  width: 96%;
+  height: 15%;
+}
+
+.whitebox
+{
+  height: 15%;
+  width: 100%;
+}
+
+.space
+{
+  padding: 4%;
+}
