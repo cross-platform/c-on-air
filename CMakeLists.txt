@@ -12,5 +12,4 @@ add_definitions(
 
 add_subdirectory(dependencies)
 add_subdirectory(example)
-add_subdirectory(mediatmos)
 add_subdirectory(src)
