@@ -1,15 +1,35 @@
 cmake_minimum_required(VERSION 2.8)
 
-project(ConAir)
-
-add_definitions(
-    -std=c++11
-    -fno-permissive
-    -pedantic
-    -Wall
-    -Wextra
-)
+project(conair)
 
 add_subdirectory(dependencies)
 add_subdirectory(example)
-add_subdirectory(src)
+
+include_directories(
+    ${CMAKE_SOURCE_DIR}/dependencies
+    ${CMAKE_SOURCE_DIR}/include
+)
+
+file(GLOB srcs src/*.cpp)
+file(GLOB hdrs include/*.h)
+
+add_library(
+    ${PROJECT_NAME}
+    ${srcs}
+    ${hdrs}
+)
+
+target_link_libraries(
+    ${PROJECT_NAME}
+
+    ${PROJECT_NAME}_dependencies
+)
+install(
+    TARGETS ${PROJECT_NAME}
+    DESTINATION lib
+)
+
+install(
+    FILES ${hdrs}
+    DESTINATION include/conair
+)

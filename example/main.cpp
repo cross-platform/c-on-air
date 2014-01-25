@@ -1,5 +1,5 @@
-#include "CoaController.h"
-#include "../src/CoaServer.h"
+#include <CoaController.h>
+#include <CoaServer.h>
 
 #include <iostream>
 #include <stdio.h>

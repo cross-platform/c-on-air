@@ -4,8 +4,8 @@
 #include <map>
 #include <string>
 
-#include "../src/CoaServer.h"
-#include "../dependencies/interpp.h"
+#include <CoaServer.h>
+#include <interpp.h>
 
 //=================================================================================================
 

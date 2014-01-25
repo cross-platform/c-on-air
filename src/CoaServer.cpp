@@ -29,13 +29,13 @@ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ************************************************************************/
 
-#include "CoaServer.h"
+#include <CoaServer.h>
 
 #include <iostream>
 #include <string.h>
 
-#include "../dependencies/interpp.h"
-#include "../dependencies/mongoose.h"
+#include <interpp.h>
+#include <mongoose.h>
 
 mg_context* CoaServer::_ctx = NULL;
 CoaClientInfo CoaServer::_clientInfo;

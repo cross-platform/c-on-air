@@ -2,19 +2,22 @@ add_definitions(
     -DUSE_WEBSOCKET
 )
 
+include_directories(
+    ${CMAKE_CURRENT_SOURCE_DIR}
+)
+
 add_library(
-    ${PROJECT_NAME}Dependencies
+    ${PROJECT_NAME}_dependencies
 
     cJSON.h
     cJSON.c
-    interpp.h
-    interpp.cpp
+
     mongoose.h
     mongoose.c
 )
 
 target_link_libraries(
-    ${PROJECT_NAME}Dependencies
+    ${PROJECT_NAME}_dependencies
 
     pthread
     dl
