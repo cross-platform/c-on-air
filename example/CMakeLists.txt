@@ -1,4 +1,4 @@
-project(conair_example)
+project(ConAirExample)
 
 include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}
@@ -17,7 +17,7 @@ add_executable(
 target_link_libraries(
     ${PROJECT_NAME}
 
-    conair
+    ConAir
 )
 
 file(COPY html DESTINATION ./)
