@@ -12,18 +12,21 @@ include_directories(
 
 file(GLOB srcs src/*.cpp)
 file(GLOB hdrs include/*.h)
+file(GLOB in_hdrs include/conair/*.h)
 
 add_library(
     ${PROJECT_NAME}
     ${srcs}
     ${hdrs}
+    ${in_hdrs}
 )
 
 target_link_libraries(
     ${PROJECT_NAME}
 
-    ${PROJECT_NAME}_dependencies
+    conair_dependencies
 )
+
 install(
     TARGETS ${PROJECT_NAME}
     DESTINATION lib
@@ -31,5 +34,10 @@ install(
 
 install(
     FILES ${hdrs}
+    DESTINATION include
+)
+
+install(
+    FILES ${in_hdrs}
     DESTINATION include/conair
 )

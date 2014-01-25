@@ -1,3 +1,5 @@
+project(conair_dependencies)
+
 add_definitions(
     -DUSE_WEBSOCKET
 )
@@ -7,7 +9,7 @@ include_directories(
 )
 
 add_library(
-    ${PROJECT_NAME}_dependencies
+    ${PROJECT_NAME}
 
     cJSON.h
     cJSON.c
@@ -17,7 +19,7 @@ add_library(
 )
 
 target_link_libraries(
-    ${PROJECT_NAME}_dependencies
+    ${PROJECT_NAME}
 
     pthread
     dl

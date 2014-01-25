@@ -1,5 +1,4 @@
 #include <CoaController.h>
-#include <CoaServer.h>
 
 #include <iostream>
 #include <stdio.h>
