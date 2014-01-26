@@ -18,9 +18,11 @@ add_library(
     mongoose.c
 )
 
-target_link_libraries(
-    ${PROJECT_NAME}
+if(UNIX)
+    target_link_libraries(
+        ${PROJECT_NAME}
 
-    pthread
-    dl
-)
+        pthread
+        dl
+    )
+endif(UNIX)
