@@ -1,4 +1,4 @@
-project(conair_dependencies)
+project(ConAirDependencies)
 
 add_definitions(
     -DUSE_WEBSOCKET

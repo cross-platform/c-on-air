@@ -9,7 +9,7 @@ int main()
 {
   CoaController controller;
 
-  CoaServer::StartServer( "html", "8080" );
+  CoaServer::StartServer( HTML_ROOT, "8080" );
 
   std::cout << "Browse to http://localhost:8080\n";
 

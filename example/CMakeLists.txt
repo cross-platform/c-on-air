@@ -1,5 +1,7 @@
 project(ConAirExample)
 
+add_definitions(-DHTML_ROOT="${CMAKE_CURRENT_SOURCE_DIR}/html")
+
 include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}
     ${CMAKE_SOURCE_DIR}/include
@@ -19,5 +21,3 @@ target_link_libraries(
 
     ConAir
 )
-
-file(COPY html DESTINATION ./)
